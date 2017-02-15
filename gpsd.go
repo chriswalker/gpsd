@@ -49,7 +49,7 @@ func ConnectAndListen(address string) error {
 
 // Close stops the listener go routine, and closes the connection to gpsd.
 func Close() {
-	// Tell the listen go routine to stop
+	// TODO: Tell the listen go routine to stop, via channel
 
 	socket.Close()
 }
